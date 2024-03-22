@@ -1,14 +1,12 @@
  INCLUDE Irvine32.inc
  includelib winmm.lib
 
-
 WriteConsoleW PROTO :DWORD, :PTR WORD, :DWORD, :PTR DWORD, :DWORD
 
 PlaySound PROTO, pszSound:PTR BYTE,  hmod:DWORD,  fdwSound:DWORD
 
 BUFFER_SIZE = 5000
 .data
-
 
 number3 db "                                               ",0ah
         db "                                               ",0ah
@@ -340,7 +338,7 @@ currentSelection db 1
 instructionsStr db "The objective of the game is to get PAC-MAN to eat all the dots",0ah
 db "           in the maze without getting caught by the ghosts!",0ah,0ah
 db"         Use WASD to move PAC-MAN around the maze to start collecting dots",0ah
-db"            to earn points. Watch out for the ghosts – PAC-MAN loses",0ah
+db"            to earn points. Watch out for the ghosts Â– PAC-MAN loses",0ah
 db"                  a turn everytime you get caught by one.",0ah,0
 
 pausedStr db "!>..........Paused..........<!",0
